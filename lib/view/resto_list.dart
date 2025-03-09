@@ -20,14 +20,14 @@ class RestaurantList extends StatelessWidget {
             toolbarHeight: 65,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/restaurants.jpg',
-                fit: BoxFit.fitWidth,
+                'assets/resto.jpg',
+                fit: BoxFit.cover,
               ),
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Restaurant App",
+                    "RESTORO APP",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   IconButton(

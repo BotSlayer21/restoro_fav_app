@@ -111,7 +111,7 @@ Widget buildRestaurantItem(BuildContext context, Restaurant restaurant) {
                             SnackBar(
                               content: Center(
                                   child: Text(
-                                      '${restaurant.name} dicabut dari daftar favorit')),
+                                      '${restaurant.name} dihapus dari daftar favorit')),
                               duration: const Duration(seconds: 1),
                             ),
                           );
@@ -129,7 +129,7 @@ Widget buildRestaurantItem(BuildContext context, Restaurant restaurant) {
                       },
                       icon: Icon(
                         isFavorited ? Icons.favorite : Icons.favorite_outline,
-                        color: isFavorited ? Colors.pink : Colors.black,
+                        color: isFavorited ? Colors.pink : Colors.red,
                       )),
                 ),
               )

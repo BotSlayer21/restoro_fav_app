@@ -45,7 +45,7 @@ class NotificationHelper {
       FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {
     var channelId = "1";
     var channelName = "channel_01";
-    var channelDescription = "Restaurant App";
+    var channelDescription = "RESTORO APP";
 
     var androidPlatformChannelSpecifics = AndroidNotificationDetails(
         channelId, channelName,
