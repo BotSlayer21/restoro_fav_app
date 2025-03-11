@@ -26,6 +26,9 @@ class SettingsPage extends StatelessWidget {
                   onChanged: (value) {
                     provider.enableDarkTheme(value);
                   },
+                  activeColor: Colors.amberAccent,
+                  inactiveThumbColor: Colors.grey,
+                  inactiveTrackColor: Colors.grey.shade800,
                 ),
               ),
             ),
@@ -62,6 +65,9 @@ class SettingsPage extends StatelessWidget {
                             provider.enableDailyReminder(value);
                           }
                         },
+                        activeColor: Colors.greenAccent,
+                        inactiveThumbColor: Colors.grey,
+                        inactiveTrackColor: Colors.grey.shade800,
                       );
                     }),
               ),
@@ -72,4 +78,3 @@ class SettingsPage extends StatelessWidget {
     });
   }
 }
-

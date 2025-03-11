@@ -44,15 +44,18 @@ class CustomerReviews extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.black,
-                      foregroundColor: Colors.white,
+                      backgroundColor: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.grey[800]
+                          : Colors.black,
+                      foregroundColor: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.white
+                          : Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
                     onPressed: () {
-                      Provider.of<RestaurantDetailProvider>(context,
-                          listen: false)
+                      Provider.of<RestaurantDetailProvider>(context, listen: false)
                           .fetchDataAgain();
                     },
                     child: const Icon(Icons.refresh),
